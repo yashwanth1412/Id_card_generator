@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.editDetailsController">
+   <children>
+      <ComboBox fx:id="searchBy" layoutX="224.0" layoutY="26.0" prefWidth="150.0" />
+      <Label layoutX="46.0" layoutY="26.0" prefHeight="26.0" prefWidth="99.0" text="Search using :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="detail" layoutX="39.0" layoutY="77.0" prefHeight="35.0" prefWidth="298.0" promptText="Enter the Detail (enter &quot;all&quot; to execute on all details)" />
+      <Button layoutX="447.0" layoutY="79.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="94.0" text="Execute">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="2.0" layoutY="134.0" prefHeight="262.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="col_1" prefWidth="91.199951171875" text="Name" />
+          <TableColumn fx:id="col_2" prefWidth="95.20001220703125" text="Roll Number" />
+            <TableColumn fx:id="col_3" prefWidth="80.800048828125" text="Department" />
+            <TableColumn fx:id="col_4" prefWidth="107.20001220703125" text="Mobile no" />
+            <TableColumn fx:id="col_6" prefWidth="133.60003662109375" text="email" />
+            <TableColumn fx:id="col_7" minWidth="0.0" prefWidth="85.5999755859375" text="DateofBirth" />
+        </columns>
+      </TableView>
+      <Button layoutX="447.0" layoutY="417.0" mnemonicParsing="false" onAction="#deleteUsers" prefHeight="35.0" prefWidth="110.0" text="DELETE" textFill="#c21c1c" />
+      <Label fx:id="status" layoutX="392.0" layoutY="14.0" prefHeight="49.0" prefWidth="188.0" textFill="#ea1616">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="253.0" layoutY="417.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="35.0" prefWidth="110.0" text="UPDATE" textFill="#d71717" />
+      <ComboBox fx:id="updateList" layoutX="20.0" layoutY="404.0" prefWidth="150.0" />
+      <TextField fx:id="updatedValue" layoutX="21.0" layoutY="446.0" promptText="Enter the value to update" />
+   </children>
+</AnchorPane>
