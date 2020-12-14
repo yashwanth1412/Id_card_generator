@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminPageController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="viewdetails" mnemonicParsing="false" onAction="#viewDetails" prefHeight="100.0" prefWidth="300.0" text="View Details" textFill="#841919">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="setDetails" mnemonicParsing="false" onAction="#Details" prefHeight="100.0" prefWidth="345.0" text="Set Details" textFill="#841919">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="adminAnchor" layoutY="100.0" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="118.0" layoutY="117.0" prefHeight="199.0" prefWidth="335.0" text="Welcome !!!" textFill="#da1616">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
