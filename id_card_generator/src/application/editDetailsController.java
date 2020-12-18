@@ -133,6 +133,12 @@ public class editDetailsController implements Initializable{
     		status.setText("Invalid Details");
     		return;
     	}
+	if(updateList.getValue()!="email") {
+    		data.updateDetails(updateList.getValue(), updatedValue.getText(), "email",  s.getEmailId());
+    	}
+    	else {
+    		data.updateDetails(updateList.getValue(), updatedValue.getText(), "rollNo",  s.getRollNo());
+    	}
     	data.updateDetails(updateList.getValue(), updatedValue.getText(), s.getEmailId());
     	searchResults();
     	status.setText("Successfully Updated!!");
